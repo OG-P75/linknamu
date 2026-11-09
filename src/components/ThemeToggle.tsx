@@ -21,7 +21,7 @@ export default function ThemeToggle() {
       type="button"
       onClick={toggle}
       aria-label={dark ? "밝은 화면으로 전환" : "어두운 화면으로 전환"}
-      className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-neutral-900 text-lg transition hover:scale-105 focus:outline-none focus-visible:ring-4 focus-visible:ring-sky-400 dark:border-neutral-100"
+      className="flex h-10 w-10 items-center justify-center rounded-full border border-white/70 bg-white/45 text-base shadow-sm backdrop-blur-xl transition duration-300 hover:bg-white/70 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-300 dark:border-white/10 dark:bg-white/[0.06] dark:hover:bg-white/[0.12]"
     >
       {/* 첫 렌더에서는 아이콘을 비워 서버/클라이언트 불일치를 막습니다 */}
       <span aria-hidden>{dark === null ? "" : dark ? "☀️" : "🌙"}</span>

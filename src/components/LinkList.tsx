@@ -35,7 +35,7 @@ export default function LinkList({ links }: Props) {
 
   return (
     // 카드를 위에서 아래로 세로로 쌓습니다 (flex-col)
-    <ul className="flex flex-col gap-4">
+    <ul className="flex flex-col gap-4 sm:gap-5">
       {links.map((link) => (
         <li key={link.id} className="w-full">
           <LinkCard

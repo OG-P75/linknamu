@@ -2,7 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 배경: 크림색 → 연한 살구색으로 부드럽게 이어지는 따뜻한 그라데이션 */
 body {
-  @apply bg-neutral-100 text-neutral-900 transition-colors dark:bg-neutral-950 dark:text-neutral-100;
-  font-family: var(--font-geist-sans), "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  @apply min-h-dvh text-stone-800 dark:text-stone-100;
+  background-color: #fff8f1;
+  background-image: linear-gradient(170deg, #fffaf3 0%, #fdeee2 55%, #fbdccb 100%);
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
+    "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 다크모드: 같은 따뜻한 느낌을 유지한 어두운 그라데이션 */
+.dark body {
+  background-color: #1a1512;
+  background-image: linear-gradient(170deg, #1f1915 0%, #241b16 55%, #2e1f18 100%);
 }
